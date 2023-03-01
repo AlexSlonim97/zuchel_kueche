@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zuchel Kueche</title>
+    <link rel="stylesheet" href="styles/css.css">
+    <link rel="stylesheet" href="styles/adaptive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="info">
+            <div class="logo-burger">
+                <div class="logo">
+                    <img src="images/logo.png" alt="логотип">
+                </div>
+                <div class="burger" id="burger">
+                    <svg id="Layer_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="m464.883 64.267h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z"/>
+                        <path d="m464.883 208.867h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z"/>
+                        <path d="m464.883 353.467h-417.766c-25.98 0-47.117 21.137-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.012-21.137-47.149-47.117-47.149z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="contacts">
+                <div class="icon-number">
+                    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.3" clip-path="url(#clip0_23_140)">
+                            <path d="M13.3766 9.1894C12.5195 9.1894 11.6779 9.05534 10.8804 8.79178C10.4896 8.65849 10.0092 8.78077 9.77066 9.02573L8.1965 10.2141C6.37092 9.23956 5.2464 8.11541 4.28521 6.30354L5.43857 4.77039C5.73822 4.47114 5.8457 4.03401 5.71693 3.62385C5.45224 2.82213 5.31779 1.98093 5.31779 1.12343C5.31782 0.503964 4.81386 0 4.19443 0H1.62339C1.00396 0 0.5 0.503964 0.5 1.12339C0.5 8.22365 6.27638 14 13.3766 14C13.9961 14 14.5 13.496 14.5 12.8766V10.3128C14.5 9.69336 13.996 9.1894 13.3766 9.1894Z"
+                                  fill="white"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_23_140">
+                                <rect width="14" height="14" fill="white" transform="translate(0.5)"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <div class="number">+375 29 123 45 67</div>
+                </div>
+                <div class="icon-mail">
+                    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.3" clip-path="url(#clip0_23_146)">
+                            <path d="M14.3767 2.78143L10.1308 7L14.3767 11.2186C14.4534 11.0581 14.5 10.8808 14.5 10.6914V3.30859C14.5 3.11918 14.4534 2.94186 14.3767 2.78143Z"
+                                  fill="white"/>
+                            <path d="M13.2695 2.07812H1.73047C1.54106 2.07812 1.36373 2.12469 1.20331 2.20145L6.63003 7.60082C7.10986 8.08065 7.89014 8.08065 8.36997 7.60082L13.7967 2.20145C13.6363 2.12469 13.4589 2.07812 13.2695 2.07812Z"
+                                  fill="white"/>
+                            <path d="M0.62332 2.78143C0.546566 2.94186 0.5 3.11918 0.5 3.30859V10.6914C0.5 10.8808 0.546566 11.0582 0.62332 11.2186L4.86923 7L0.62332 2.78143Z"
+                                  fill="white"/>
+                            <path d="M9.55078 7.57999L8.94996 8.18081C8.15045 8.98031 6.84952 8.98031 6.05002 8.18081L5.44922 7.57999L1.20331 11.7986C1.36373 11.8753 1.54106 11.9219 1.73047 11.9219H13.2695C13.4589 11.9219 13.6363 11.8753 13.7967 11.7986L9.55078 7.57999Z"
+                                  fill="white"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_23_146">
+                                <rect width="14" height="14" fill="white" transform="translate(0.5)"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <div class="mail">example@info.com</div>
+                </div>
+                <select class="lang">
+                    <option>Русский</option>
+                    <option>English</option>
+                    <option>Spanish</option>
+                </select>
+            </div>
+            <div class="icon-search">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_23_169)">
+                        <path d="M5.63456 11.2643C6.8859 11.2643 8.10145 10.8468 9.08866 10.0779L12.8131 13.8023C13.0913 14.071 13.5347 14.0633 13.8034 13.7851C14.0655 13.5137 14.0655 13.0834 13.8034 12.8121L10.0789 9.08761C11.987 6.63146 11.5427 3.0936 9.08651 1.18557C6.63036 -0.722456 3.09253 -0.278142 1.18451 2.17801C-0.723524 4.63416 -0.27921 8.17201 2.17694 10.08C3.16576 10.8482 4.3824 11.2649 5.63456 11.2643ZM2.642 2.64092C4.29476 0.988124 6.97442 0.988094 8.62721 2.64086C10.28 4.29362 10.28 6.97327 8.62727 8.62606C6.97451 10.2789 4.29485 10.2789 2.64206 8.62613C2.64203 8.62609 2.64203 8.62609 2.642 8.62606C0.98924 6.98535 0.979502 4.31546 2.62022 2.6627C2.62747 2.65542 2.63472 2.64817 2.642 2.64092Z"
+                              fill="white" fill-opacity="0.3"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_23_169">
+                            <rect width="14" height="14" fill="white"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+                <input type="text" class="search-input" placeholder="Поиск">
+            </div>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li class="menu-item">
+                    <a href="#">Мягкая мебель</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Кухонная мебель</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Корпусная мебель</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Офисная мебель</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Предметы декора</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Каталог</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="menu-none">
+            <div class="menu-list">
+                <div class="menu-list-one">
+                    <div class="menu-list-list">
+                        <div class="menu-list-title">Шкафы</div>
+                        <ul>
+                            <li class="menu-list-item">
+                                <a href="#">Настенные</a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a href="#">Напольные</a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a href="#">Большие</a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a href="#">Маленькие</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu-list-list">
+                        <div class="menu-list-title">Столы</div>
+                        <ul>
+                            <li class="menu-list-item">
+                                <a href="#">Кухонные</a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a href="#">Офисные</a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a href="#">Обеденные</a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a href="#">Компьютерные</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-list-two">
+                    <div class="menu-list-list">
+                        <div class="menu-list-title">Стулья</div>
+                        <ul>
+                            <li class="menu-list-item">
+                                <a href="#">Компьютерные</a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a href="#">Обеденные</a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a href="#">Офисные</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu-list-list">
+                        <div class="menu-list-title">Кровати</div>
+                        <ul>
+                            <li class="menu-list-item">
+                                <a href="#">Двуспальные</a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a href="#">Односпальные</a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a href="#">Тахты</a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a href="#">С подъемным механизмом</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-none-img">
+                <img src="images/menu-none.png" alt="картинка">
+            </div>
+        </div>
+    </div>
+</header>
+<div class="breadcrumb">
+    <div class="container">
+        <ul class="breadcrumb-ul">
+            <li>
+                <a href="#">Главная страница</a>
+            </li>
+            <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2.82837" y="0.17157" width="4" height="1" transform="rotate(45 2.82837 0.17157)" fill="white"/>
+                <rect x="5.65674" y="3" width="4" height="1" transform="rotate(135 5.65674 3)" fill="white"/>
+            </svg>
+            <li class="current">Каталог</li>
+        </ul>
+    </div>
+</div>
+<div class="main-catalog">
+    <div class="container">
+        <h1>каталог</h1>
+        <div class="catalog-two-big-images">
+            <div class="catalog-card">
+                <img src="images/catalog-2/individual.png" alt="Индивидуальная мебель">
+                <h3>Индивидуальная мебель</h3>
+                <div class="look-catalog white-array">
+                    <a href="#">Просмотреть каталог</a>
+                    <svg width="41" height="8" viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64645L37.1716 0.464466C36.9763 0.269204 36.6597 0.269204 36.4645 0.464466C36.2692 0.659728 36.2692 0.976311 36.4645 1.17157L39.2929 4L36.4645 6.82843C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.7308 36.9763 7.7308 37.1716 7.53553L40.3536 4.35355ZM0 4.5H40V3.5H0V4.5Z"
+                              fill="white"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="catalog-card result">
+                <img src="images/catalog-2/result.png" alt="Готовые решения">
+                <h3>Готовые решения</h3>
+                <div class="look-catalog white-array">
+                    <a href="#">Просмотреть каталог</a>
+                    <svg width="41" height="8" viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64645L37.1716 0.464466C36.9763 0.269204 36.6597 0.269204 36.4645 0.464466C36.2692 0.659728 36.2692 0.976311 36.4645 1.17157L39.2929 4L36.4645 6.82843C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.7308 36.9763 7.7308 37.1716 7.53553L40.3536 4.35355ZM0 4.5H40V3.5H0V4.5Z"
+                              fill="white"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="table new">
+            <div class="description table-text">
+                <h2>Новинки</h2>
+                <div class="description-small-text">
+                    Лучшие индивидуальные решения для вашего комфорта.
+                </div>
+                <div class="look-catalog white-array">
+                    <a href="#">Просмотреть каталог</a>
+                    <svg width="41" height="8" viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64645L37.1716 0.464466C36.9763 0.269204 36.6597 0.269204 36.4645 0.464466C36.2692 0.659728 36.2692 0.976311 36.4645 1.17157L39.2929 4L36.4645 6.82843C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.7308 36.9763 7.7308 37.1716 7.53553L40.3536 4.35355ZM0 4.5H40V3.5H0V4.5Z"
+                              fill="white"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="images/catalog-2/catalog2-1.png" alt="Loft #2">
+                    <div class="card-loft">Loft #2</div>
+                    <div class="card-price">1350.00 руб.</div>
+                </div>
+                <div class="card">
+                    <img src="images/catalog-2/catalog2-2.png" alt="Loft #2">
+                    <div class="card-loft">Loft #3</div>
+                    <div class="card-price">1400.00 руб.</div>
+                </div>
+                <div class="card">
+                    <img src="images/catalog-2/catalog2-3.png" alt="Loft #2">
+                    <div class="card-loft">Loft #4</div>
+                    <div class="card-price">1500.00 руб.</div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="table hit">
+            <div class="description table-text">
+                <h2>хит продаж</h2>
+                <div class="description-small-text">
+                    Лучшие индивидуальные решения для вашего комфорта.
+                </div>
+                <div class="look-catalog white-array">
+                    <a href="#">Просмотреть каталог</a>
+                    <svg width="41" height="8" viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64645L37.1716 0.464466C36.9763 0.269204 36.6597 0.269204 36.4645 0.464466C36.2692 0.659728 36.2692 0.976311 36.4645 1.17157L39.2929 4L36.4645 6.82843C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.7308 36.9763 7.7308 37.1716 7.53553L40.3536 4.35355ZM0 4.5H40V3.5H0V4.5Z"
+                              fill="white"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <img src="images/catalog-2/hit-1.png" alt="Loft #2">
+                    <div class="card-loft">Loft #2</div>
+                    <div class="card-price">1350.00 руб.</div>
+                </div>
+                <div class="card">
+                    <img src="images/catalog-2/hit-2.png" alt="Loft #2">
+                    <div class="card-loft">Loft #3</div>
+                    <div class="card-price">1400.00 руб.</div>
+                </div>
+                <div class="card">
+                    <img src="images/catalog-2/hit-3.png" alt="Loft #2">
+                    <div class="card-loft">Loft #4</div>
+                    <div class="card-price">1500.00 руб.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="forms">
+    <div class="container">
+        <div class="form-text">
+            <div class="form-title">
+                свяжитесь с нами и мы ответим на все ваши вопросы
+            </div>
+            <div class="form-small-text">
+                Наши менеджеры свяжутся с вами в самое ближайшее время и помогут закрыть все вопросы или сделать
+                индивидуальный заказ.
+            </div>
+        </div>
+        <div class="contacts-form">
+            <div class="contacts-in-form">
+                <div class="icon mail-icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.2">
+                            <path d="M15.8591 3.17871L11.0066 7.99993L15.8591 12.8211C15.9468 12.6378 16 12.4351 16 12.2187V3.78118C16 3.56471 15.9468 3.36205 15.8591 3.17871Z"
+                                  fill="#161616"/>
+                            <path d="M14.5937 2.375H1.40624C1.18977 2.375 0.987116 2.42822 0.803772 2.51594L7.00574 8.68666C7.55412 9.23503 8.44587 9.23503 8.99424 8.68666L15.1962 2.51594C15.0129 2.42822 14.8102 2.375 14.5937 2.375Z"
+                                  fill="#161616"/>
+                            <path d="M0.140938 3.17871C0.0532188 3.36205 0 3.56471 0 3.78118V12.2187C0 12.4351 0.0532188 12.6378 0.140938 12.8211L4.99341 7.99993L0.140938 3.17871Z"
+                                  fill="#161616"/>
+                            <path d="M10.3437 8.66309L9.65708 9.34974C8.74337 10.2635 7.25658 10.2635 6.34287 9.34974L5.65624 8.66309L0.803772 13.4843C0.987116 13.572 1.18977 13.6252 1.40624 13.6252H14.5937C14.8102 13.6252 15.0129 13.572 15.1962 13.4843L10.3437 8.66309Z"
+                                  fill="#161616"/>
+                        </g>
+                    </svg>
+                    <div class="contact mail-address">example@info.com</div>
+                </div>
+                <div class="icon number-icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.2" clip-path="url(#clip0_23_40)">
+                            <path d="M14.7162 10.5022C13.7366 10.5022 12.7747 10.349 11.8633 10.0478C11.4167 9.89542 10.8676 10.0352 10.595 10.3151L8.796 11.6732C6.70963 10.5595 5.42446 9.27475 4.32596 7.20404L5.64408 5.45188C5.98654 5.10988 6.10938 4.61029 5.96221 4.14154C5.65971 3.22529 5.50604 2.26392 5.50604 1.28392C5.50608 0.575958 4.93013 0 4.22221 0H1.28387C0.575958 0 0 0.575958 0 1.28387C0 9.39846 6.60158 16 14.7162 16C15.4241 16 16 15.424 16 14.7161V11.786C16 11.0781 15.424 10.5022 14.7162 10.5022Z"
+                                  fill="#161616"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_23_40">
+                                <rect width="16" height="16" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <div class="contact number-tel">+375 29 123 45 67</div>
+                </div>
+                <div class="icon number-icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.2" clip-path="url(#clip0_23_40)">
+                            <path d="M14.7162 10.5022C13.7366 10.5022 12.7747 10.349 11.8633 10.0478C11.4167 9.89542 10.8676 10.0352 10.595 10.3151L8.796 11.6732C6.70963 10.5595 5.42446 9.27475 4.32596 7.20404L5.64408 5.45188C5.98654 5.10988 6.10938 4.61029 5.96221 4.14154C5.65971 3.22529 5.50604 2.26392 5.50604 1.28392C5.50608 0.575958 4.93013 0 4.22221 0H1.28387C0.575958 0 0 0.575958 0 1.28387C0 9.39846 6.60158 16 14.7162 16C15.4241 16 16 15.424 16 14.7161V11.786C16 11.0781 15.424 10.5022 14.7162 10.5022Z"
+                                  fill="#161616"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_23_40">
+                                <rect width="16" height="16" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <div class="contact number-tel">+375 29 123 45 67</div>
+                </div>
+                <div class="icon address-icon">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.2" clip-path="url(#clip0_23_37)">
+                            <path d="M8 0C6.40935 0.00211004 4.88445 0.634929 3.75969 1.75969C2.63493 2.88445 2.00211 4.40935 2 6C2 10.3075 7.59 15.7025 7.8275 15.93C7.8737 15.9749 7.93558 16 8 16C8.06442 16 8.1263 15.9749 8.1725 15.93C8.41 15.7025 14 10.3075 14 6C13.9979 4.40935 13.3651 2.88445 12.2403 1.75969C11.1155 0.634929 9.59065 0.00211004 8 0ZM8 8.75C7.4561 8.75 6.92442 8.58871 6.47218 8.28654C6.01995 7.98437 5.66747 7.55488 5.45933 7.05238C5.25119 6.54988 5.19673 5.99695 5.30284 5.4635C5.40895 4.93005 5.67086 4.44005 6.05546 4.05546C6.44005 3.67086 6.93005 3.40895 7.4635 3.30284C7.99695 3.19673 8.54988 3.25119 9.05238 3.45933C9.55488 3.66747 9.98437 4.01995 10.2865 4.47218C10.5887 4.92442 10.75 5.4561 10.75 6C10.7496 6.72921 10.4597 7.42843 9.94406 7.94406C9.42843 8.45969 8.72921 8.74956 8 8.75Z"
+                                  fill="#161616"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_23_37">
+                                <rect width="16" height="16" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <div class="contact address">
+                        <p>ул. Мясницкая, 12</p>
+                        <p>230005</p>
+                        <p>г. Гродно Республика Беларусь</p>
+                    </div>
+                </div>
+            </div>
+            <div class="form">
+                <input type="text" class="input" placeholder="Введите ваше имя">
+                <input type="text" class="input" placeholder="+">
+                <textarea class="input textarea" placeholder="Опишите ваш запрос"></textarea>
+                <button class="button-black" type="button">отправить</button>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-one">
+            <div class="logo-text">
+                <div class="logo">
+                    <img src="images/logo.png" alt="логотип">
+                    <div class="footer-text">
+                        <p>Объекты влияют на наше впечатление</p>
+                        <p>о пространстве и на то, как мы себя чувствуем</p>
+                        <p>в их присутствии.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="category">
+                <div class="list category-list">категории</div>
+                <div class="category-item">
+                    <a href="#">Мягкая мебель</a>
+                </div>
+                <div class="category-item">
+                    <a href="#">Кухонная мебель</a>
+                </div>
+                <div class="category-item">
+                    <a href="#">Корпусная мебель</a>
+                </div>
+                <div class="category-item">
+                    <a href="#">Офисная мебель</a>
+                </div>
+                <div class="category-item">
+                    <a href="#">Предметы декора</a>
+                </div>
+            </div>
+            <div class="socials">
+                <div class="list">будьте с нами</div>
+                <div class="category-item social-media">
+                    <a href="#">Twitter</a>
+                </div>
+                <div class="category-item social-media">
+                    <a href="#">Youtube</a>
+                </div>
+                <div class="category-item social-media">
+                    <a href="#">Instagram</a>
+                </div>
+                <div class="category-item social-media">
+                    <a href="#">Facebook</a>
+                </div>
+            </div>
+            <div class="footer-contacts">
+                <div class="list">свяжитесь с нами</div>
+                <div class="contacts-footer contacts-in-form">
+                    <div class="icon mail-icon">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.3">
+                                <path d="M13.8767 2.78125L9.63077 6.99982L13.8767 11.2184C13.9534 11.058 14 10.8806 14 10.6912V3.30841C14 3.119 13.9534 2.94168 13.8767 2.78125Z"
+                                      fill="white"/>
+                                <path d="M12.7695 2.07812H1.23047C1.04106 2.07812 0.863734 2.12469 0.703308 2.20145L6.13003 7.60082C6.60986 8.08065 7.39014 8.08065 7.86997 7.60082L13.2967 2.20145C13.1363 2.12469 12.9589 2.07812 12.7695 2.07812Z"
+                                      fill="white"/>
+                                <path d="M0.12332 2.78125C0.0465664 2.94168 0 3.119 0 3.30841V10.6912C0 10.8806 0.0465664 11.058 0.12332 11.2184L4.36923 6.99982L0.12332 2.78125Z"
+                                      fill="white"/>
+                                <path d="M9.05078 7.58008L8.44996 8.1809C7.65045 8.98041 6.34952 8.98041 5.55001 8.1809L4.94922 7.58008L0.703308 11.7986C0.863734 11.8754 1.04106 11.922 1.23047 11.922H12.7695C12.9589 11.922 13.1363 11.8754 13.2967 11.7986L9.05078 7.58008Z"
+                                      fill="white"/>
+                            </g>
+                        </svg>
+                        <div class="footer-contact mail-address">example@info.com</div>
+                    </div>
+                    <div class="icon number-icon">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.3" clip-path="url(#clip0_23_71)">
+                                <path d="M12.8766 9.1894C12.0195 9.1894 11.1779 9.05534 10.3804 8.79178C9.98958 8.65849 9.50917 8.78077 9.27066 9.02573L7.6965 10.2141C5.87092 9.23956 4.7464 8.11541 3.78521 6.30354L4.93857 4.77039C5.23822 4.47114 5.3457 4.03401 5.21693 3.62385C4.95224 2.82213 4.81779 1.98093 4.81779 1.12343C4.81782 0.503964 4.31386 0 3.69443 0H1.12339C0.503964 0 0 0.503964 0 1.12339C0 8.22365 5.77638 14 12.8766 14C13.4961 14 14 13.496 14 12.8766V10.3127C14 9.69336 13.496 9.1894 12.8766 9.1894Z"
+                                      fill="white"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_23_71">
+                                    <rect width="14" height="14" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <div class="footer-contact number-tel">+375 29 123 45 67</div>
+                    </div>
+                    <div class="icon number-icon">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.3" clip-path="url(#clip0_23_71)">
+                                <path d="M12.8766 9.1894C12.0195 9.1894 11.1779 9.05534 10.3804 8.79178C9.98958 8.65849 9.50917 8.78077 9.27066 9.02573L7.6965 10.2141C5.87092 9.23956 4.7464 8.11541 3.78521 6.30354L4.93857 4.77039C5.23822 4.47114 5.3457 4.03401 5.21693 3.62385C4.95224 2.82213 4.81779 1.98093 4.81779 1.12343C4.81782 0.503964 4.31386 0 3.69443 0H1.12339C0.503964 0 0 0.503964 0 1.12339C0 8.22365 5.77638 14 12.8766 14C13.4961 14 14 13.496 14 12.8766V10.3127C14 9.69336 13.496 9.1894 12.8766 9.1894Z"
+                                      fill="white"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_23_71">
+                                    <rect width="14" height="14" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <div class="footer-contact number-tel">+375 29 123 45 67</div>
+                    </div>
+                    <div class="footer-icon icon address-icon">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.3" clip-path="url(#clip0_23_79)">
+                                <path d="M7 0C5.60818 0.00184628 4.27389 0.555562 3.28973 1.53973C2.30556 2.52389 1.75185 3.85818 1.75 5.25C1.75 9.01906 6.64125 13.7397 6.84906 13.9388C6.88948 13.978 6.94363 14 7 14C7.05637 14 7.11052 13.978 7.15094 13.9388C7.35875 13.7397 12.25 9.01906 12.25 5.25C12.2482 3.85818 11.6944 2.52389 10.7103 1.53973C9.7261 0.555562 8.39182 0.00184628 7 0ZM7 7.65625C6.52409 7.65625 6.05887 7.51513 5.66316 7.25072C5.26745 6.98632 4.95904 6.61052 4.77692 6.17083C4.59479 5.73115 4.54714 5.24733 4.63999 4.78056C4.73283 4.3138 4.962 3.88504 5.29852 3.54852C5.63504 3.212 6.0638 2.98283 6.53056 2.88999C6.99733 2.79714 7.48115 2.84479 7.92083 3.02691C8.36052 3.20904 8.73632 3.51745 9.00072 3.91316C9.26513 4.30887 9.40625 4.77409 9.40625 5.25C9.40587 5.88806 9.15223 6.49988 8.70105 6.95105C8.24988 7.40223 7.63806 7.65587 7 7.65625Z"
+                                      fill="white"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_23_79">
+                                    <rect width="14" height="14" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <div class="footer-contact address">
+                            <p>ул. Мясницкая, 12,230005</p>
+                            <p>г. Гродно Республика Беларусь</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="footer-two">
+            <div class="copyright">Copyright ® 2022 Zuchel Kueche</div>
+            <div class="confidentially">Политика конфиденциальности</div>
+        </div>
+    </div>
+</footer>
+<div class="popup">
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g opacity="0.3">
+            <rect x="4.24219" y="14.1421" width="14" height="2" transform="rotate(-45 4.24219 14.1421)" fill="#141515"/>
+            <rect x="14.1426" y="15.5563" width="14" height="2" transform="rotate(-135 14.1426 15.5563)"
+                  fill="#141515"/>
+        </g>
+    </svg>
+    <div class="popup-title">Ваша заявка была отправлена</div>
+    <div class="popup-small-text">
+        Наши менеджеры свяжутся с вами в самое ближайшее время и помогут закрыть все вопросы или сделать индивидуальный
+        заказ.
+    </div>
+    <button type="button" class="popup-btn">вернуться к каталогу</button>
+</div>
+
+<script src="scripts/js.js"></script>
+</body>
+</html>
